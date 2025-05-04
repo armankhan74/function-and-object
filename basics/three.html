@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+<ul class="languages">
+    <li>html</li>
+
+</ul>
+    
+</body>
+<script>
+//     const div = document.createElement('div')
+//     console.log(div);
+
+//     div.innerHTML = 'hello world';
+//     div.style.backgroundColor = 'green';
+//     div.id = Math.round(Math.random() * 10 + 1);
+//     div.innerText = 'another hello world';
+    
+//    const textnode =  document.createTextNode('how are you?');
+//    div.appendChild(textnode);
+// //    document.body.appendChild(div);
+
+// function addLanguage(addlang) {
+//     const li = document.createElement('li');
+//     li.innerHTML = `${addlang}`;
+//     document.querySelector('.languages').appendChild(li);
+// }
+// addLanguage('javascript');
+// // 
+
+function addotilang(addlng){
+   const li =  document.createElement('li');
+   li.appendChild(document.createTextNode(addlng));
+   document.querySelector('.languages').appendChild(li);
+    }
+addotilang('css');
+
+// // edit the first li element
+// const li  = document.querySelector('li:nth-child(1)');
+// li.innerHTML = 'html5';
+
+function addlist(addlisting){
+const li  = document.createElement('li');
+li.appendChild(document.createTextNode(addlisting));
+document.querySelector('.languages').appendChild(li);
+}
+addlist('python');
+</script>
+</html>
